@@ -1,0 +1,4 @@
+“*.zip” filter=lfs diff=lfs merge=lfs -text
+“*.mp4” filter=lfs diff=lfs merge=lfs -text
+3.Simulacoes/** filter=lfs diff=lfs merge=lfs -text
+6.Fabricação/** filter=lfs diff=lfs merge=lfs -text
