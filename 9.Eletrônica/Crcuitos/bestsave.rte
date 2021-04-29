@@ -1,0 +1,798 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack PS12
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00028 
+   (rule
+   )
+   (wire (path TOP 25400  4278000 7198500 4064000 7198500 4064000 7048500
+     2780000 7048500 2780000 6650000)
+    (connect (terminal smd "MUX BALANCA"-0) (terminal smd MSP430-16))
+   )
+   )
+   (Net #00029 
+   (rule
+   )
+   (wire (path TOP 25400  3429000 5588000 3429000 6350800 3270000 6350800
+     3270000 6350000)
+    (connect (terminal via) (terminal smd MSP430-1))
+   )
+   (wire (path BOT 25400  3270000 4512000 3270000 4635500 3365500 4635500
+     3365500 5596263 3429000 5596263 3429000 5588000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-10) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 3429000 5588000)
+   )
+   (Net #00030 
+   (rule
+   )
+   (wire (path TOP 25400  3270000 6300000 3270000 6096000 3302000 6096000)
+    (connect (terminal smd MSP430-0) (terminal via))
+   )
+   (wire (path BOT 25400  3302000 6096000 3238500 6096000 3238500 7493000
+     2540000 7493000 2540000 4635500 2612900 4635500 2612900 2476500
+     2794000 2476500 2794000 2413000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path BOT 25400  2794000 2413000 3008000 2413000 3008000 2254000)
+    (connect (terminal wire) (terminal pin ULTRASSONICOS-11))
+   )
+   (wire (path BOT 25400  2616200 2413000 2500000 2413000 2500000 2254000)
+    (connect (terminal wire) (terminal pin ULTRASSONICOS-13))
+   )
+   (wire (path BOT 25400  3516000 2254000 3516000 2413000 3262000 2413000
+     3262000 2254000)
+    (connect (terminal pin ULTRASSONICOS-9) (terminal pin ULTRASSONICOS-10))
+   )
+   (wire (path TOP 25400  3770000 2254000 3516000 2254000)
+    (connect (terminal pin ULTRASSONICOS-8) (terminal pin ULTRASSONICOS-9))
+   )
+   (wire (path TOP 25400  3262000 2254000 3008000 2254000)
+    (connect (terminal pin ULTRASSONICOS-10) (terminal pin ULTRASSONICOS-11))
+   )
+   (wire (path BOT 25400  4024000 2254000 4024000 2476500 3770000 2476500
+     3770000 2254000)
+    (connect (terminal pin ULTRASSONICOS-7) (terminal pin ULTRASSONICOS-8))
+   )
+   (wire (path BOT 25400  2754000 2254000 2794000 2254000 2794000 2413000)
+    (connect (terminal pin ULTRASSONICOS-12) (terminal wire))
+   )
+   (wire (path BOT 25400  2794000 2413000 2616200 2413000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (via $VIA#0_SIGNAL 3302000 6096000)
+   )
+   (Net #00031 
+   (rule
+   )
+   (wire (path TOP 25400  2508000 3750000 2508000 4071719 3150800 4071719
+     3150800 6230000 3150000 6230000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-2) (terminal smd MSP430-30))
+   )
+   )
+   (Net #00032 
+   (rule
+   )
+   )
+   (Net #00033 
+   (rule
+   )
+   (wire (path TOP 25400  3556000 5270500 3556000 6450000 3270000 6450000)
+    (connect (terminal via) (terminal smd MSP430-3))
+   )
+   (wire (path BOT 25400  3778000 4512000 3778000 5270500 3556000 5270500)
+    (connect (terminal pin "MUX ULTRASSONICOS"-8) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 3556000 5270500)
+   )
+   (Net #00038 
+   (rule
+   )
+   (wire (path TOP 25400  5080000 5143500 3746500 5143500 3746500 6549200
+     3270000 6549200 3270000 6550000)
+    (connect (terminal via) (terminal smd MSP430-5))
+   )
+   (wire (path BOT 25400  5254000 2000000 5254000 2984500 5080000 2984500
+     5080000 5143500)
+    (connect (terminal pin ODOMETROS-1) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 5080000 5143500)
+   )
+   (Net #00039 
+   (rule
+   )
+   (wire (path TOP 25400  3873500 5270500 3873500 6600800 3270000 6600800
+     3270000 6600000)
+    (connect (terminal via) (terminal smd MSP430-6))
+   )
+   (wire (path BOT 25400  5000000 2000000 5000000 2286000 4381500 2286000
+     4381500 5270500 3873500 5270500)
+    (connect (terminal pin ODOMETROS-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 3873500 5270500)
+   )
+   (Net #00043 
+   (rule
+   )
+   (wire (path TOP 25400  6250000 2000000 5969000 2000000 5969000 2821519
+     1714500 2821519 1714500 6599200 2780000 6599200 2780000 6600000)
+    (connect (terminal pin BUSSOLA-0) (terminal smd MSP430-17))
+   )
+   )
+   (Net #00044 
+   (rule
+   )
+   )
+   (Net #00045 
+   (rule
+   )
+   (wire (path TOP 25400  6758000 2000000 6758000 2984500 1841500 2984500
+     1841500 6500000 2780000 6500000)
+    (connect (terminal pin BUSSOLA-2) (terminal smd MSP430-19))
+   )
+   )
+   (Net #00071 
+   (rule
+   )
+   (wire (path BOT 25400  -3238000 4758000 -3238000 4381500 -2857000 4381500
+     -2857000 4250000)
+    (connect (terminal pin "PONTE H"-8) (terminal pin "PONTE H"-5))
+   )
+   (wire (path TOP 25400  -3492000 4758000 -3492000 5016500 -5397500 5016500
+     -5397500 4750000 -5750000 4750000)
+    (connect (terminal pin "PONTE H"-10) (terminal pin "V5 V12"-0))
+   )
+   (wire (path TOP 25400  -3492000 4758000 -3492000 4757999 -3365500 4757999
+     -3365500 4758000 -3238000 4758000)
+    (connect (terminal pin "PONTE H"-10) (terminal pin "PONTE H"-8))
+   )
+   )
+   (Net #00072 
+   (rule
+   )
+   (wire (path BOT 25400  -3500000 2250000 -3500000 1968500 -2349000 1968500
+     -2349000 4250000)
+    (connect (terminal pin "CON MOTOR1"-0) (terminal pin "PONTE H"-1))
+   )
+   )
+   (Net #00073 
+   (rule
+   )
+   (wire (path BOT 25400  -2999620 2250000 -2999620 2603500 -2476000 2603500
+     -2476000 4758000)
+    (connect (terminal pin "CON MOTOR1"-1) (terminal pin "PONTE H"-2))
+   )
+   )
+   (Net #00074 
+   (rule
+   )
+   (wire (path BOT 25400  -5500000 2250000 -5500000 4381500 -3746000 4381500
+     -3746000 4758000)
+    (connect (terminal pin "CON MOTOR2"-0) (terminal pin "PONTE H"-12))
+   )
+   )
+   (Net #00075 
+   (rule
+   )
+   (wire (path BOT 25400  -4999620 2250000 -4999620 4250000 -3873000 4250000)
+    (connect (terminal pin "CON MOTOR2"-1) (terminal pin "PONTE H"-13))
+   )
+   )
+   (Net #00078 
+   (rule
+   )
+   (wire (path TOP 25400  -4000000 5484000 -3683000 5484000 -3683000 5254565
+     -2222000 5254565 -2222000 4758000)
+    (connect (terminal pin "SENS A"-1) (terminal pin "PONTE H"-0))
+   )
+   )
+   (Net #00079 
+   (rule
+   )
+   (wire (path BOT 25400  -4750000 5484000 -4750000 4758000 -4000000 4758000)
+    (connect (terminal pin "SENS B"-1) (terminal pin "PONTE H"-14))
+   )
+   )
+   (Net #00081 
+   (rule
+   )
+   (wire (path TOP 25400  -5750000 4249620 -4135998 4249620 -4135998 4381500
+     -2603000 4381500 -2603000 4250000)
+    (connect (terminal pin "V5 V12"-1) (terminal pin "PONTE H"-3))
+   )
+   )
+   (Net #00115 
+   (rule
+   )
+   (wire (path BOT 25400  2762000 4512000 2762000 4127500 3143000 4127500
+     3143000 3418481 4191000 3418481 4191000 2000000 4024000 2000000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-12) (terminal pin ULTRASSONICOS-6))
+   )
+   )
+   (Net #00116 
+   (rule
+   )
+   (wire (path TOP 25400  2413000 2540000 4254500 2540000 4254500 1841500
+     3770000 1841500 3770000 2000000)
+    (connect (terminal via) (terminal pin ULTRASSONICOS-5))
+   )
+   (wire (path BOT 25400  2508000 4512000 2508000 4254500 2381000 4254500
+     2381000 3111771 2413000 3111771 2413000 2540000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-13) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2413000 2540000)
+   )
+   (Net #00117 
+   (rule
+   )
+   (wire (path TOP 25400  2159000 1968500 2159000 1841500 3516000 1841500
+     3516000 2000000)
+    (connect (terminal via) (terminal pin ULTRASSONICOS-4))
+   )
+   (wire (path BOT 25400  2254000 4512000 2254000 4254500 2127000 4254500
+     2127000 3505252 2159000 3505252 2159000 1968500)
+    (connect (terminal pin "MUX ULTRASSONICOS"-14) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2159000 1968500)
+   )
+   (Net #00118 
+   (rule
+   )
+   (wire (path BOT 25400  3016000 4512000 3016000 4381500 4254500 4381500
+     4254500 1841500 3262000 1841500 3262000 2000000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-11) (terminal pin ULTRASSONICOS-3))
+   )
+   )
+   (Net #00119 
+   (rule
+   )
+   (wire (path BOT 25400  2000000 3750000 2000000 1841500 3008000 1841500
+     3008000 2000000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-0) (terminal pin ULTRASSONICOS-2))
+   )
+   )
+   (Net #00120 
+   (rule
+   )
+   )
+   (Net #00121 
+   (rule
+   )
+   (wire (path BOT 25400  2254000 3750000 2254000 2000000 2500000 2000000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-1) (terminal pin ULTRASSONICOS-0))
+   )
+   )
+   (Net #00131 
+   (rule
+   )
+   (wire (path TOP 25400  5397500 4000500 5397500 3996000 5250000 3996000)
+    (connect (terminal via) (terminal smd HXADC2-5))
+   )
+   (wire (path BOT 25400  5242000 5000000 5242000 4000500 5397500 4000500)
+    (connect (terminal pin C3-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 5397500 4000500)
+   )
+   (Net #00132 
+   (rule
+   )
+   (wire (path BOT 25400  6500000 4296800 6731000 4296800 6731000 5334000
+     4750000 5334000 4750000 4750000)
+    (connect (terminal pin PNP-2) (terminal pin R2-0))
+   )
+   (wire (path BOT 25400  6500000 4296800 6500000 3556000 6250000 3556000
+     6250000 3250000)
+    (connect (terminal pin PNP-2) (terminal pin C4-0))
+   )
+   (wire (path TOP 25400  4750000 4750000 4750000 4377000 5250000 4377000)
+    (connect (terminal pin R2-0) (terminal smd HXADC2-2))
+   )
+   )
+   (Net #00133 
+   (rule
+   )
+   (wire (path TOP 25400  4762500 4191000 4762500 4250000 5250000 4250000)
+    (connect (terminal via) (terminal smd HXADC2-3))
+   )
+   (wire (path BOT 25400  4750000 3734000 4750000 4191000 4762500 4191000)
+    (connect (terminal pin R2-1) (terminal via))
+   )
+   (wire (path BOT 25400  4750000 3484000 4750000 3734000)
+    (connect (terminal pin R3-0) (terminal pin R2-1))
+   )
+   (via $VIA#0_SIGNAL 4762500 4191000)
+   )
+   (Net #00134 
+   (rule
+   )
+   (wire (path TOP 25400  5524500 4254500 5524500 4504000 5250000 4504000)
+    (connect (terminal via) (terminal smd HXADC2-1))
+   )
+   (wire (path BOT 25400  6500000 4500000 5986921 4500000 5986921 4254500
+     5524500 4254500)
+    (connect (terminal pin PNP-1) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 5524500 4254500)
+   )
+   (Net #00149 
+   (rule
+   )
+   (wire (path TOP 25400  4762500 6731000 4762500 6817500 4278000 6817500)
+    (connect (terminal via) (terminal smd "MUX BALANCA"-3))
+   )
+   (wire (path BOT 25400  6722000 6436500 6722000 6223000 6032500 6223000
+     6032500 6731000 4762500 6731000)
+    (connect (terminal pin "CELULAS DE CARGA"-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 4762500 6731000)
+   )
+   (Net #00150 
+   (rule
+   )
+   (wire (path TOP 25400  6722000 6690500 6921500 6690500 6921500 5715000
+     4064000 5715000 4064000 6690500 4278000 6690500)
+    (connect (terminal pin "CELULAS DE CARGA"-1) (terminal smd "MUX BALANCA"-4))
+   )
+   )
+   (Net #00152 
+   (rule
+   )
+   (wire (path TOP 25400  6468000 7198500 6137571 7198500 6137571 7071500
+     5222000 7071500)
+    (connect (terminal pin "CELULAS DE CARGA"-4) (terminal smd "MUX BALANCA"-22))
+   )
+   )
+   (Net #00153 
+   (rule
+   )
+   (wire (path TOP 25400  6468000 6944500 6159500 6944500 6159500 6944499
+     5842000 6944499 5842000 6944500 5222000 6944500)
+    (connect (terminal pin "CELULAS DE CARGA"-5) (terminal smd "MUX BALANCA"-21))
+   )
+   )
+   (Net #00154 
+   (rule
+   )
+   (wire (path TOP 25400  6468000 6690500 6223000 6690500 6223000 6563500
+     5222000 6563500)
+    (connect (terminal pin "CELULAS DE CARGA"-6) (terminal smd "MUX BALANCA"-18))
+   )
+   )
+   (Net #00155 
+   (rule
+   )
+   (wire (path TOP 25400  6468000 6436500 5222000 6436500)
+    (connect (terminal pin "CELULAS DE CARGA"-7) (terminal smd "MUX BALANCA"-17))
+   )
+   )
+   (Net #00156 
+   (rule
+   )
+   (wire (path TOP 25400  5842000 6096000 5842000 5928500 5222000 5928500)
+    (connect (terminal via) (terminal smd "MUX BALANCA"-13))
+   )
+   (wire (path BOT 25400  6722000 6944500 6921500 6944500 6921500 6096000
+     5842000 6096000)
+    (connect (terminal pin "CELULAS DE CARGA"-2) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 5842000 6096000)
+   )
+   (Net #00157 
+   (rule
+   )
+   (wire (path TOP 25400  6286500 6350000 6286500 5801500 5222000 5801500)
+    (connect (terminal via) (terminal smd "MUX BALANCA"-12))
+   )
+   (wire (path BOT 25400  6722000 7198500 6722000 7429500 6286500 7429500
+     6286500 6350000)
+    (connect (terminal pin "CELULAS DE CARGA"-3) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 6286500 6350000)
+   )
+   (Net 5V 
+   (rule
+   )
+   (wire (path TOP 25400  3238500 5080000 4889500 5080000 4889500 4631000
+     5250000 4631000)
+    (connect (terminal via) (terminal smd HXADC2-0))
+   )
+   (wire (path BOT 25400  3004000 7250000 3004000 5080000 3238500 5080000)
+    (connect (terminal pin "MSP VCC-GND"-1) (terminal via))
+   )
+   (wire (path TOP 25400  3004000 7250000 3504853 7250000 3504853 7302500
+     4658320 7302500 4658320 7198500 5222000 7198500)
+    (connect (terminal pin "MSP VCC-GND"-1) (terminal smd "MUX BALANCA"-23))
+   )
+   (wire (path TOP 25400  6500000 4703200 6191348 4703200 6191348 4631000
+     5790000 4631000)
+    (connect (terminal pin PNP-0) (terminal smd HXADC2-15))
+   )
+   (wire (path TOP 25400  5790000 4631000 5790000 4631001 5651500 4631001
+     5651500 4631000 5250000 4631000)
+    (connect (terminal smd HXADC2-15) (terminal smd HXADC2-0))
+   )
+   (via $VIA#0_SIGNAL 3238500 5080000)
+   )
+   (Net DOUT 
+   (rule
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 25400  2667000 5588000 3000000 5588000 3000000 6230000)
+    (connect (terminal via) (terminal smd MSP430-27))
+   )
+   (wire (path BOT 25400  2667000 5588000 2667000 6350000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25400  2667000 5461000 2667000 5588000)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path BOT 25400  2667000 5334000 2667000 5461000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25400  2667000 5207000 2667000 5334000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25400  -3111000 4250000 -3111000 4127500 -3492500 4127500
+     -3492500 4561631 -3619500 4561631 -3619500 6223000 -4000000 6223000
+     -4000000 6500000)
+    (connect (terminal pin "PONTE H"-7) (terminal pin "SENS A"-0))
+   )
+   (wire (path BOT 25400  3429000 3873500 3429000 4254500 2889000 4254500
+     2889000 4635500 2667000 4635500 2667000 5207000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25400  5996000 3250000 5996000 3556000 5758201 3556000
+     5758201 4127500 5397500 4127500 5397500 4381500 5651500 4381500)
+    (connect (terminal pin C4-1) (terminal via))
+   )
+   (wire (path BOT 25400  4750000 2468000 4750000 2730500 4572000 2730500
+     4572000 3873500)
+    (connect (terminal pin R3-1) (terminal via))
+   )
+   (wire (path TOP 25400  4572000 3873500 4889500 3873500)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25400  3778000 3750000 4381500 3750000 4381500 3873500
+     4572000 3873500)
+    (connect (terminal pin "MUX ULTRASSONICOS"-7) (terminal via))
+   )
+   (wire (path TOP 25400  5651500 4381500 5651500 4123000 5250000 4123000)
+    (connect (terminal via) (terminal smd HXADC2-4))
+   )
+   (wire (path TOP 25400  4889500 3873500 4889500 4123000 5250000 4123000)
+    (connect (terminal wire) (terminal smd HXADC2-4))
+   )
+   (wire (path TOP 25400  -924000 7250000 -924000 7366000 -1686001 7366000)
+    (connect (terminal pin U1-38) (terminal wire))
+   )
+   (wire (path BOT 25400  -2702000 7250000 -2702000 7366000 -3464000 7366000)
+    (connect (terminal pin U1-24) (terminal wire))
+   )
+   (wire (path BOT 25400  2750000 7250000 2750000 6350000 2667000 6350000)
+    (connect (terminal pin "MSP VCC-GND"-0) (terminal via))
+   )
+   (wire (path BOT 25400  -5242000 7504000 -5242000 7366000 -4734000 7366000)
+    (connect (terminal pin U1-5) (terminal wire))
+   )
+   (wire (path BOT 25400  5750000 5000000 5750000 4381500 5651500 4381500)
+    (connect (terminal pin C3-1) (terminal via))
+   )
+   (wire (path TOP 25400  -2193999 7366000 -2702000 7366000 -2702000 7250000)
+    (connect (terminal wire) (terminal pin U1-24))
+   )
+   (wire (path TOP 25400  4889500 6350000 4889500 6182500 5222000 6182500)
+    (connect (terminal via) (terminal smd "MUX BALANCA"-15))
+   )
+   (wire (path BOT 25400  3778000 3750000 3778000 3873500 3429000 3873500)
+    (connect (terminal pin "MUX ULTRASSONICOS"-7) (terminal wire))
+   )
+   (wire (path TOP 25400  4889500 6350000 4699000 6350000 4699000 6436500
+     4445000 6436500)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25400  4445000 6436500 4445000 6309500 4278000 6309500)
+    (connect (terminal wire) (terminal smd "MUX BALANCA"-7))
+   )
+   (wire (path TOP 25400  4278000 6563500 4445000 6563500 4445000 6436500)
+    (connect (terminal smd "MUX BALANCA"-5) (terminal wire))
+   )
+   (wire (path BOT 25400  3270000 3750000 3270000 3873500 3429000 3873500)
+    (connect (terminal pin "MUX ULTRASSONICOS"-5) (terminal wire))
+   )
+   (wire (path TOP 25400  5222000 6690500 5461000 6690500 5461000 6817500
+     5222000 6817500)
+    (connect (terminal smd "MUX BALANCA"-19) (terminal smd "MUX BALANCA"-20))
+   )
+   (wire (path TOP 25400  5651500 4381500 5651500 4504000 5790000 4504000)
+    (connect (terminal via) (terminal smd HXADC2-14))
+   )
+   (wire (path BOT 25400  -4750000 6500000 -4750000 6908167 -4734000 6908167
+     -4734000 7250000)
+    (connect (terminal pin "SENS B"-0) (terminal pin U1-8))
+   )
+   (wire (path TOP 25400  4278000 6182500 4127500 6182500 4127500 6309500
+     4278000 6309500)
+    (connect (terminal smd "MUX BALANCA"-8) (terminal smd "MUX BALANCA"-7))
+   )
+   (wire (path TOP 25400  5651500 4381500 5651500 4377000 5790000 4377000)
+    (connect (terminal via) (terminal smd HXADC2-13))
+   )
+   (wire (path BOT 25400  -4225999 7366000 -3464000 7366000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path TOP 25400  -4000000 6500000 -4750000 6500000)
+    (connect (terminal pin "SENS A"-0) (terminal pin "SENS B"-0))
+   )
+   (wire (path BOT 25400  -4734000 7250000 -4635500 7250000 -4635500 7366000
+     -4225999 7366000)
+    (connect (terminal pin U1-8) (terminal wire))
+   )
+   (wire (path TOP 25400  -1686001 7366000 -2193999 7366000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25400  5750000 5000000 5461000 5000000 5461000 5219700
+     4889500 5219700 4889500 4572000 4572000 4572000 4572000 6350000
+     4889500 6350000)
+    (connect (terminal pin C3-1) (terminal via))
+   )
+   (wire (path TOP 25400  -2194000 7504000 -2193999 7504000 -2193999 7366000)
+    (connect (terminal pin U1-29) (terminal wire))
+   )
+   (wire (path BOT 25400  -4226000 7504000 -4225999 7504000 -4225999 7366000)
+    (connect (terminal pin U1-13) (terminal wire))
+   )
+   (wire (path TOP 25400  -1686000 7504000 -1686001 7504000 -1686001 7366000)
+    (connect (terminal pin U1-33) (terminal wire))
+   )
+   (wire (path TOP 25400  4508500 6032500 4508500 6182500 4278000 6182500)
+    (connect (terminal wire) (terminal smd "MUX BALANCA"-8))
+   )
+   (wire (path TOP 25400  4508500 6032500 4508500 5801500 4278000 5801500)
+    (connect (terminal wire) (terminal smd "MUX BALANCA"-11))
+   )
+   (wire (path TOP 25400  4278000 6436500 4127500 6436500 4127500 6563500
+     4278000 6563500)
+    (connect (terminal smd "MUX BALANCA"-6) (terminal smd "MUX BALANCA"-5))
+   )
+   (wire (path TOP 25400  4278000 6055500 4508500 6055500 4508500 6032500)
+    (connect (terminal smd "MUX BALANCA"-9) (terminal wire))
+   )
+   (wire (path BOT 25400  -3464000 7366000 -3464000 7504000)
+    (connect (terminal wire) (terminal pin U1-19))
+   )
+   (wire (path TOP 25400  4889500 6350000 4889500 6690500 5080000 6690500)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path BOT 25400  4889500 6350000 5016500 6350000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path TOP 25400  5222000 6055500 5461000 6055500 5461000 6182500
+     5222000 6182500)
+    (connect (terminal smd "MUX BALANCA"-14) (terminal smd "MUX BALANCA"-15))
+   )
+   (wire (path BOT 25400  -4734000 7366000 -4734000 7250000)
+    (connect (terminal wire) (terminal pin U1-8))
+   )
+   (wire (path TOP 25400  5080000 6690500 5222000 6690500)
+    (connect (terminal wire) (terminal smd "MUX BALANCA"-19))
+    (attr fanout)
+   )
+   (wire (path TOP 25400  5016500 6350000 5016500 6309500 5222000 6309500)
+    (connect (terminal wire) (terminal smd "MUX BALANCA"-16))
+    (attr fanout)
+   )
+   (via $VIA#0_POWER 2667000 5588000)
+   (via $VIA#0_POWER 4572000 3873500)
+   (via $VIA#0_POWER 4889500 6350000)
+   (via $VIA#0_POWER 5016500 6350000)
+   (via $VIA#0_POWER 2667000 6350000)
+   (via $VIA#0_POWER 5651500 4381500)
+   )
+   (Net IN+ 
+   (rule
+   )
+   )
+   (Net IN- 
+   (rule
+   )
+   )
+   (Net "MAX BCLK " 
+   (rule
+   )
+   (wire (path BOT 25400  -1496000 2250000 -1496000 2540000 -1432000 2540000
+     -1432000 7250000)
+    (connect (terminal pin "MAX SAIDA"-1) (terminal pin U1-34))
+   )
+   )
+   (Net "MAX DIN" 
+   (rule
+   )
+   (wire (path BOT 25400  -1242000 2250000 -1242000 5243550 -1305000 5243550
+     -1305000 7366000 -1178000 7366000 -1178000 7504000)
+    (connect (terminal pin "MAX SAIDA"-2) (terminal pin U1-37))
+   )
+   )
+   (Net "MAX LRCLK" 
+   (rule
+   )
+   (wire (path BOT 25400  -1750000 2250000 -1750000 3691631 -1559000 3691631
+     -1559000 7366000 -1432000 7366000 -1432000 7504000)
+    (connect (terminal pin "MAX SAIDA"-0) (terminal pin U1-35))
+   )
+   )
+   (Net "MAX SD" 
+   (rule
+   )
+   (wire (path BOT 25400  -988000 2250000 -988000 5804253 -1178000 5804253
+     -1178000 7250000)
+    (connect (terminal pin "MAX SAIDA"-3) (terminal pin U1-36))
+   )
+   )
+   (Net "PONTE IN1" 
+   (rule
+   )
+   (wire (path BOT 25400  -2730000 4758000 -2730000 4572000 -3111500 4572000
+     -3111500 6593234 -2194000 6593234 -2194000 7250000)
+    (connect (terminal pin "PONTE H"-4) (terminal pin U1-28))
+   )
+   )
+   (Net "PONTE IN2" 
+   (rule
+   )
+   (wire (path BOT 25400  -2984000 4758000 -2984000 6393647 -1940000 6393647
+     -1940000 7250000)
+    (connect (terminal pin "PONTE H"-6) (terminal pin U1-30))
+   )
+   )
+   (Net "PONTE IN3" 
+   (rule
+   )
+   (wire (path BOT 25400  -3365000 4250000 -3365000 6937799 -2321000 6937799
+     -2321000 7366000 -1940000 7366000 -1940000 7504000)
+    (connect (terminal pin "PONTE H"-9) (terminal pin U1-31))
+   )
+   )
+   (Net "PONTE IN4" 
+   (rule
+   )
+   (wire (path BOT 25400  -3619000 4250000 -3619000 4000500 -2730500 4000500
+     -2730500 4381500 -2603500 4381500 -2603500 5369548 -1686000 5369548
+     -1686000 7250000)
+    (connect (terminal pin "PONTE H"-11) (terminal pin U1-32))
+   )
+   )
+   (Net SCK 
+   (rule
+   )
+   (wire (path TOP 25400  2850000 6720000 2850000 6720001 2832779 6720001
+     2832779 6921500 4000500 6921500 4000500 5588000 6731000 5588000
+     6731000 3996000 5790000 3996000)
+    (connect (terminal smd MSP430-15) (terminal smd HXADC2-10))
+   )
+   )
+   (Net "UART RX" 
+   (rule
+   )
+   )
+   (Net "UART TX" 
+   (rule
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path TOP 25400  1968500 5080000 3100000 5080000 3100000 6230000)
+    (connect (terminal via) (terminal smd MSP430-29))
+   )
+   (wire (path BOT 25400  2000000 4512000 2000000 4762500 1841500 4762500
+     1841500 5080000 1968500 5080000)
+    (connect (terminal pin "MUX ULTRASSONICOS"-15) (terminal via))
+   )
+   (wire (path TOP 25400  -3718000 7250000 -3718000 7366000 -5750000 7366000
+     -5750000 7250000)
+    (connect (terminal pin U1-16) (terminal pin U1-0))
+   )
+   (via PS12 1968500 5080000)
+   )
+   (Net VEE 
+   (rule
+   )
+   )
+  )
+ )

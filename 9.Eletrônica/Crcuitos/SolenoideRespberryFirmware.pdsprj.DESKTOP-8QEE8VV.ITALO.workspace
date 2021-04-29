@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<WORKSPACE>
+ <FRAME activewindow="0">
+  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffffd6feffff11fcffffe5030000c7feffff</PLACEMENT>
+  <WINDOW type="default" module="ISIS"/>
+  <WINDOW type="default" module="VSMSTUDIO">
+   <FILE ACTIVE="TRUE" NAME="Raspberry Pi 3/main.py"/>
+   <STATE NAME="EDIT" VALUE="AAAA/wAAAAH9AAAAAwAAAAAAAAEAAAABv/wCAAAAAvsAAAAQAFAAcgBvAGoAZQBjAHQAcwEAAAAAAAABvwAAASwA////+wAAABQAUAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAGQA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAADQAZABvAGMAawA6ADQAMAA5ADcAOgBSAGEAcwBwAGIAZQByAHIAeQAgAFAAaQAgAEwARQBEAAAAAAD/////AAAAAAAAAAAAAAADAAAFTgAAAJH8AQAAAAH8AAAAAAAABU4AAABQAP////oAAAAAAQAAAAT7AAAAIABPAHUAdABwAHUAdABEAG8AYwBrAFcAaQBkAGcAZQB0AQAAAAD/////AAAAUAD////7AAAAKgBkAG8AYwBrADoAMAA6AFMAaQBtAHUAbABhAHQAaQBvAG4AIABMAG8AZwAAAAAA/////wAAAAAAAAAA+wAAACYAZABvAGMAawA6ADEAOgBXAGEAdABjAGgAIABXAGkAbgBkAG8AdwAAAAAA/////wAAAAAAAAAA+wAAADYAZABvAGMAawA6ADIAOgBWAFMATQBQAFkAIABWAGEAcgBpAGEAYgBsAGUAcwAgAC0AIABVADEBAAAAAP////8AAAAAAAAAAAAABEoAAAG/AAAAAQAAAAIAAAAIAAAAAvwAAAAA"/>
+   <STATE NAME="DEBUG" VALUE="AAAA/wAAAAH9AAAAAwAAAAAAAAEAAAABv/wCAAAAAvsAAAAQAFAAcgBvAGoAZQBjAHQAcwAAAAAAAAABvwAAASwA////+wAAABQAUAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAGQA////AAAAAQAAAMcAAAJU/AIAAAAB+wAAADQAZABvAGMAawA6ADQAMAA5ADcAOgBSAGEAcwBwAGIAZQByAHIAeQAgAFAAaQAgAEwARQBEAQAAAAAAAAJUAAAAZQD///8AAAADAAAEgwAAAJH8AQAAAAH8AAAAAAAABIMAAAGSAP////oAAAADAQAAAAT7AAAAIABPAHUAdABwAHUAdABEAG8AYwBrAFcAaQBkAGcAZQB0AAAAAAD/////AAAAUAD////7AAAAKgBkAG8AYwBrADoAMAA6AFMAaQBtAHUAbABhAHQAaQBvAG4AIABMAG8AZwAAAAAA/////wAAAZIA////+wAAACYAZABvAGMAawA6ADEAOgBXAGEAdABjAGgAIABXAGkAbgBkAG8AdwAAAAAA/////wAAAWAA////+wAAADYAZABvAGMAawA6ADIAOgBWAFMATQBQAFkAIABWAGEAcgBpAGEAYgBsAGUAcwAgAC0AIABVADEBAAAAAP////8AAAGSAP///wAABIMAAAG/AAAAAQAAAAIAAAAIAAAAAvwAAAAA"/>
+   <PROJECT ACTIVE="TRUE" NAME="RPI3" CONFIGURATION="Debug">
+    <PROGRAMMER NAME="RPISSH" INTERFACE="Raspberry Pi">
+     <PROPERTY NAME="HOST" VALUE=""/>
+     <PROPERTY NAME="USERNAME" VALUE="pi"/>
+     <PROPERTY NAME="PASSWORD" VALUE="raspberry"/>
+     <PROPERTY NAME="TARGET_PATH" VALUE="/vsm"/>
+    </PROGRAMMER>
+   </PROJECT>
+  </WINDOW>
+ </FRAME>
+ <MODULE name="VSMDEBUG">
+  <PWI>
+   <POPUP w="400" x="5" flags="00000002" y="106" h="100" pid="0" iid="-1">
+    <PROPERTIES>
+     <ITEM name="Message Column Width">279</ITEM>
+     <ITEM name="ShowGrid">No</ITEM>
+     <ITEM name="Source Column Width">100</ITEM>
+     <ITEM name="Version">100</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="350" x="5" flags="00000032" y="106" h="100" pid="1" iid="-1">
+    <PROPERTIES>
+     <ITEM name="Address Column Width">87</ITEM>
+     <ITEM name="AutoResize">No</ITEM>
+     <ITEM name="Gridlines">Yes</ITEM>
+     <ITEM name="Name Column Width">87</ITEM>
+     <ITEM name="ShowAddresses">Yes</ITEM>
+     <ITEM name="ShowPreviousValues">No</ITEM>
+     <ITEM name="ShowTypes">No</ITEM>
+     <ITEM name="ShowWatchPoint">Yes</ITEM>
+     <ITEM name="TriggerMode">0</ITEM>
+     <ITEM name="Value Column Width">87</ITEM>
+     <ITEM name="Version">100</ITEM>
+     <ITEM name="Watch Expression Column Width">87</ITEM>
+     <ITEM name="nItems">0</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="197" x="1164" flags="00000013" y="128" h="572" pid="4097" iid="4097">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP w="1149" x="6" flags="0000002b" y="127" h="421" pid="1" iid="1">
+    <PROPERTIES>
+     <ITEM name="CaseSensitive">No</ITEM>
+     <ITEM name="DISPADDRS">Yes</ITEM>
+     <ITEM name="DISPLNUMS">No</ITEM>
+     <ITEM name="DISPOPCODES">No</ITEM>
+     <ITEM name="FIXUPBPTS">Yes</ITEM>
+     <ITEM name="WordsOnly">No</ITEM>
+     <ITEM name="nBreakpoints">0</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="1153" x="5" flags="0000800b" y="579" h="121" pid="2" iid="1">
+    <PROPERTIES>
+     <ITEM name="Address Column Width">383</ITEM>
+     <ITEM name="AutoResize">No</ITEM>
+     <ITEM name="Gridlines">Yes</ITEM>
+     <ITEM name="Name Column Width">383</ITEM>
+     <ITEM name="ShowAddresses">Yes</ITEM>
+     <ITEM name="ShowGlobals">Yes</ITEM>
+     <ITEM name="ShowPreviousValues">No</ITEM>
+     <ITEM name="ShowTypes">No</ITEM>
+     <ITEM name="ShowWatchPoint">No</ITEM>
+     <ITEM name="TriggerMode">0</ITEM>
+     <ITEM name="Value Column Width">383</ITEM>
+     <ITEM name="Version">100</ITEM>
+     <ITEM name="nItems">0</ITEM>
+    </PROPERTIES>
+   </POPUP>
+  </PWI>
+ </MODULE>
+</WORKSPACE>

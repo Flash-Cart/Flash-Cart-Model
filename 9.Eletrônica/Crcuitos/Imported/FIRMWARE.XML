@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<FIRMWARE FAMILY="MSP430" COMPILER="GCC for MSP430" TYPE="MSP430G2553">
+ <PROJECTS>
+  <STRING>MSP430G2553</STRING>
+ </PROJECTS>
+</FIRMWARE>
